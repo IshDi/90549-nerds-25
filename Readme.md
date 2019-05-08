@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Динара Андрианова](https://up.htmlacademy.ru/htmlcss/25/user/90549).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
