@@ -8,7 +8,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-navigation-logo" href="#">
-				<img src="#" width="#" height="#" alt="Логотип Nёrds design studio">
+				<img src="http://placehold.it/150x100"  alt="Логотип Nёrds design studio">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="#">Студия</a></li>
@@ -17,39 +17,44 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="basket">Корзина</li>
+				<li class="basket"><a href="#">Корзина</a></li>
 			</ul>
 		</nav>
-		<h1 class="header-title">Магазин готовых шаблонов</h1>
 	</header>
 	<main class="container">
+		<section class="intro">
+			<h1 class="header-title">Магазин готовых шаблонов</h1>
+		</section>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form action="/echo" method="post">
 			<!-- Здесь будет форма -->
-			<h3 class="filters-title">Сетка:</h3>
-			<ul class="filters-list">
-				<li>Адаптивная</li>
-				<li>Фиксированная</li>
-				<li>Резиновая</li>
-			</ul>
-			<h3 class="filters-title">Особенности:</h3>
-			<ul class="filters-list">
-				<li>Слайдер</li>
-				<li>Блок преимуществ</li>
-				<li>Новости</li>
-				<li>Галерея</li>
-				<li>Корзина</li>
-			</ul>
+				<h3 class="filters-title">Сетка:</h3>
+				<ul class="filters-list">
+					<li><label><input type="radio" name="network" checked>Адаптивная</label></li>
+					<li><label><input type="radio" name="network">Фиксированная</label></li>
+					<li><label><input type="radio" name="network">Резиновая</label></li>
+				</ul>
+				<h3 class="filters-title">Особенности:</h3>
+				<ul class="filters-list">
+					<li><label> <input type="checkbox" name="features" checked> Слайдер</label></li>
+					<li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
+					<li><label><input type="checkbox" name="features" checked>Новости</label></li>
+					<li><label><input type="checkbox" name="features">Галерея</label></li>
+					<li><label><input type="checkbox" name="features">Корзина</label></li>
+				</ul>
+				<input type="submit" value="Показать">
 			<!-- Кнопка -->
+			</form>
 		</section>
 		<section class="catalog">
 			<ul class="catalog-list">
-				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="#" width="#" height="#" alt="Сайт Sedona"></a></li>
-				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="#" width="#" height="#" alt="Сайт Pink"></a></li>
-				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="#" width="#" height="#" alt="Сайт Borodinski"></a></li>
-				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="#" width="#" height="#" alt="Сайт игрушек"></a></li>
-				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="#" width="#" height="#" alt="Сайт для учебы"></a></li>
-				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="#" width="#" height="#" alt="Сайт для КВАСТ"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="http://placehold.it/150x100" alt="Сайт Sedona"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="http://placehold.it/150x100" alt="Сайт Pink"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="http://placehold.it/150x100" alt="Сайт Borodinski"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="http://placehold.it/150x100" alt="Сайт игрушек"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="http://placehold.it/150x100" alt="Сайт для учебы"></a></li>
+				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="http://placehold.it/150x100" alt="Сайт для КВАСТ"></a></li>
 			</ul>
 		</section>
 	</main>
