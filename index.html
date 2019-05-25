@@ -25,9 +25,9 @@
 		<section class="intro">
 			<!-- Здесь будет слайдер -->
 		</section>
-		<!-- <h1>Нёрдс - дизайн-студия из Краснодара</h1> -->
+		<h1 class="visually-hidden">Нёрдс - дизайн-студия из Краснодара</h1> 
 		<section class="catalog-services">
-			<!-- <h2 class="visually-hidden">Перечень работ</h2> -->
+			<h2 class="visually-hidden">Перечень работ</h2> 
 			<ul class="catalog-list">
 				<li class="catalog-item">
 					<a href="#" class="catalog-item-image"><img src="img/website.jpg" width="300" height="146" alt="Веб-сайты"> </a>
@@ -48,6 +48,18 @@
 					<a href="#" class="catalog-item-button">Заказать</a>
 				</li>
 			</ul>
+		</section>
+		<section class="feedback">
+			<h2>Напишите нам</h2>
+			<form action="/echo" method="post">
+				<label for="name">Ваше имя:</label>
+				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" name="email" id="email" placeholder="email@example.com">
+				<label for="letter">Текст письма:</label>
+				<input type="text" name="letter" id="letter" placeholder="В свободной форме">
+				<button type="submit">Отправить</button>
+			</form>				
 		</section>
 	</main>
 	<footer class="main-footer">
