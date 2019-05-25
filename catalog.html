@@ -43,8 +43,7 @@
 					<li><label><input type="checkbox" name="features">Галерея</label></li>
 					<li><label><input type="checkbox" name="features">Корзина</label></li>
 				</ul>
-				<input type="submit" value="Показать">
-			<!-- Кнопка -->
+				<button type="submit">Показать</button>>
 			</form>
 		</section>
 		<section class="catalog">
@@ -56,6 +55,18 @@
 				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт для учебы"></a></li>
 				<li class="catalog-item"><a class="catalog-item-image" href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт для КВАСТ"></a></li>
 			</ul>
+		</section>
+		<section class="feedback">
+			<h2>Напишите нам</h2>
+			<form action="/echo" method="post">
+				<label for="name">Ваше имя:</label>
+				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" name="email" id="email" placeholder="email@example.com">
+				<label for="letter">Текст письма:</label>
+				<input type="text" name="letter" id="letter" placeholder="В свободной форме">
+				<button type="submit">Отправить</button>
+			</form>				
 		</section>
 	</main>
 	<footer class="main-footer">
