@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #283136;
+
+	background-image: #ffffff;
+	background-position: top center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #eeeeee;
+}
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+.site-navigation a,
+.user-navigation a{
+	color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	color: #fb565a;
+}
+.site-navigation a:active, 
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-list {
+	list-style: none;
+}
+.catalog-item {
+	text-align: left;
+}
+.catalog-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+
+}
+.button {
+	font: inherit;
+	text-transform: uppercase;
+
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	background-color: #fb565a;
+	border: none;
+}
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+.button:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+}
+.catalog-button-second {
+	background-color: #00ca74;
+}
+.catalog-button-second:hover,
+.catalog-button-second:focus {
+	background-color: #00bc6c;
+}
+.catalog-button-second:active {
+	background-color: #00aa62; 
+	color: rgba(255, 255, 255, 0.3);
+}
+.catalog-button-third {
+	background-color: #efc84a;
+}
+.catalog-button-third:hover,
+.catalog-button-third:focus {
+	background-color: #eab534;
+}
+.catalog-button-third:active {
+	background-color: #e5a722;
+	color: rgba(255, 255, 255, 0.3);
+}
+.filters-button {
+	background-color: #eeeeee;
+	color: #000000;
+}
+.filters-button:hover,
+.filters-button:focus {
+	background-color: #dfdfdf;
+}
+
+.filters-button:active {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.feedback input,
+.feedback textarea{
+	font: inherit;
+	background-color: transparent;
+	border: 2px solid #d7dcde;
+}
+.feedback input:hover,
+.feedback textarea:hover
+ {
+	border-color: #b4b9bb;
+}
+.feedback input:focus,
+.feedback textarea:focus {
+	border-color: #000000;
+}
+.main-footer {
+	color: #444444;
+	background-color: #ffffff;
+}
+.footer-social li {
+	list-style: none;
+}
+.filters li {
+	list-style: none;
+}
