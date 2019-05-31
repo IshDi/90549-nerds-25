@@ -4,12 +4,11 @@ body {
 
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5;
 	font-weight: 400;
 	color: #283136;
 
-	background-image: #ffffff;
-	background-position: top center;
+	background-color: #ffffff;
 }
 
 a {
@@ -17,17 +16,16 @@ a {
 }
 
 .main-header {
-	font-size: 16px;
-	line-height: 30px;
+	line-height: 1.875;
 	font-weight: 700;
 	color: #000000;
-	text-transform: uppercase;
-
+	
 	background-color: #eeeeee;
 }
 .site-navigation,
 .user-navigation {
 	list-style: none;
+	text-transform: uppercase;
 }
 .site-navigation a,
 .user-navigation a{
@@ -52,7 +50,7 @@ a {
 }
 .catalog-item h3 {
 	font-size: 24px;
-	line-height: 30px;
+	line-height: 1.25;
 	text-transform: uppercase;
 
 }
@@ -73,6 +71,7 @@ a {
 .button:active {
 	background-color: #d7373b;
 	color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 -3px 0 #c13135;
 }
 .catalog-button-second {
 	background-color: #00ca74;
@@ -84,6 +83,7 @@ a {
 .catalog-button-second:active {
 	background-color: #00aa62; 
 	color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 -3px 0 #009958;
 }
 .catalog-button-third {
 	background-color: #efc84a;
@@ -95,6 +95,7 @@ a {
 .catalog-button-third:active {
 	background-color: #e5a722;
 	color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 -3px 0 #ce961f;
 }
 .filters-button {
 	background-color: #eeeeee;
@@ -108,25 +109,28 @@ a {
 .filters-button:active {
 	background-color: #d5d5d5;
 	color: rgba(0, 0, 0, 0.3);
+	box-shadow: 0 -3px 0 #bfbfbf;
 }
-
-
-
-
+/* === блок feedback === */
 .feedback input,
-.feedback textarea{
+.feedback textarea {
 	font: inherit;
 	background-color: transparent;
 	border: 2px solid #d7dcde;
 }
 .feedback input:hover,
-.feedback textarea:hover
- {
+.feedback textarea:hover { 
 	border-color: #b4b9bb;
 }
 .feedback input:focus,
 .feedback textarea:focus {
 	border-color: #000000;
+	outline: none;	
+}
+.feedback input:invalid,
+.feedback textarea:invalid {
+	border-color: #e74246;
+	color: #e74246;
 }
 .main-footer {
 	color: #444444;
@@ -135,6 +139,36 @@ a {
 .footer-social li {
 	list-style: none;
 }
+.filters h3 {
+	font-size: 18px;
+	line-height: 1.6;
+	text-transform: uppercase;
+	color: #000000;
+}
 .filters li {
+	font-size: 16px;
+	line-height: 1.25;
 	list-style: none;
+	color: #283136;
+}
+.pagination li {	
+	list-style: none;	
+}
+.pagination button {
+	font: inherit;
+	color: #000000;
+	background-color: #eeeeee;
+}
+.pagination button:hover,
+.pagination button:focus {
+	background-color: #dfdfdf;
+}
+.pagination button:active {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+	box-shadow: 0 -3px 0 #bfbfbf;
+}
+.pagination-active button {
+	background-color: #ffffff;
+	border: 3px solid #dbdbdb;
 }
