@@ -31,46 +31,101 @@
 	</header>
 	<main class="main-container">
 		<div class="catalog-container container">
-		<div class="catalog-columns">
-		<section class="filters">		
-			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<form action="/echo" method="post">
-			<!-- Здесь будет форма -->
-				<h3 class="filters-title">Сетка:</h3>
-				<ul class="filters-list">
-					<li><label><input type="radio" name="network" checked>Адаптивная</label></li>
-					<li><label><input type="radio" name="network">Фиксированная</label></li>
-					<li><label><input type="radio" name="network">Резиновая</label></li>
-				</ul>
-				<h3 class="filters-title">Особенности:</h3>
-				<ul class="filters-list">
-					<li><label> <input type="checkbox" name="features" checked>Слайдер</label></li>
-					<li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
-					<li><label><input type="checkbox" name="features" checked>Новости</label></li>
-					<li><label><input type="checkbox" name="features">Галерея</label></li>
-					<li><label><input type="checkbox" name="features">Корзина</label></li>
-				</ul>
-				<button class="button filters-button" type="submit">Показать</button>
-			</form>	
+			<div class="catalog-columns">
+				<section class="filters">		
+					<h2 class="visually-hidden">Фильтр товаров</h2>
+					<form action="/echo" method="post">			
+						<h3 class="filters-title">Сетка:</h3>
+						<ul class="filters-list">
+							<li><label><input type="radio" name="network" checked>Адаптивная</label></li>
+							<li><label><input type="radio" name="network">Фиксированная</label></li>
+							<li><label><input type="radio" name="network">Резиновая</label></li>
+						</ul>
+						<h3 class="filters-title">Особенности:</h3>
+						<ul class="filters-list">
+							<li><label> <input type="checkbox" name="features" checked>Слайдер</label></li>
+							<li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
+							<li><label><input type="checkbox" name="features" checked>Новости</label></li>
+							<li><label><input type="checkbox" name="features">Галерея</label></li>
+							<li><label><input type="checkbox" name="features">Корзина</label></li>
+						</ul>
+						<button class="button filters-button" type="submit">Показать</button>
+					</form>	
+				</section>
+				<section class="catalog-product">			
+					<div class="catalog-product-list">
+						<article class="catalog-product-item">
+							<a class="catalog-item-image" href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona"></a>
+							<div class="catalog-product-info">
+								<h2><a href="#">Sedona</a></h2>
+								<p>Информационный сайт для туристов</p>
+								<a href="#" class="button">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="catalog-product-item">
+							<a class="catalog-item-image" href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Сайт Pink"></a>
+							<div class="catalog-product-info">
+								<h2><a href="#">Pink App</a></h2>
+								<p>Продуктовый лендинг приложения для iOS и Android</p>
+								<a href="#" class="button">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="catalog-product-item">
+							<a class="catalog-item-image" href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Borodinski"></a>
+							<div class="catalog-product-info">
+								<h2><a href="#">Barbershop</a></h2>
+								<p>Сайт салона красоты.Для мужчин, да.</p>
+								<a href="#" class="button">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="catalog-product-item">
+							<a class="catalog-item-image" href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт игрушек"></a>
+							<div class="catalog-product-info">
+								<h2><a href="#">Mishka</a></h2>
+								<p>Интернет-магазин вязаных игрушек</p>
+								<a href="#" class="button">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="catalog-product-item">
+							<a class="catalog-item-image" href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт для учебы"></a>
+							<div class="catalog-product-info">
+								<h2><a href="#">A plus</a></h2>
+								<p>Лендинг курсов повышения квалификации</p>
+								<a href="#" class="button">9 900 руб.</a>
+							</div>
+						</article>
+						<article class="catalog-product-item">
+							<a class="catalog-item-image" href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт для КВАСТ"></a>
+							<div class="catalog-product-info">
+								<h2><a href="#">Кваст</a></h2>
+								<p>Промо-сайт производителя крафтового кваса</p>
+								<a href="#" class="button">9 900 руб.</a>
+							</div>
+						</article>
+					</div>
+					<ul class="pagination-list">
+						<li class="pagination-active"><a>1</a></li>
+						<li class="pagination-button"><a href="#">2</a></li>
+						<li class="pagination-button"><a href="#">3</a></li>
+						<li class="pagination-button"><a href="#">Следующая</a></li>
+					</ul>		
+				</section>
+			</div>		
+		</div>	
+		<section class="map">
+			<div class="container">
+				<div class="contacts">
+					<h3>Nёrds design studio</h3>
+					<p>191186, Санкт-Петербург, <br>
+					ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a href="#" class="button">Напишите нам</a>
+				</div>
+				<div class="map-marker">
+					<img src="img/map-marker.png" width="231" height="190" alt="Указатель местоположения">
+				</div>
+			</div>
 		</section>
-		<section class="catalog-product">			
-			<ul class="catalog-product-list">
-				<li class="catalog-product-item"><a class="catalog-item-image" href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona"></a></li>
-				<li class="catalog-product-item"><a class="catalog-item-image" href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Сайт Pink"></a></li>
-				<li class="catalog-product-item"><a class="catalog-item-image" href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Borodinski"></a></li>
-				<li class="catalog-product-item"><a class="catalog-item-image" href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт игрушек"></a></li>
-				<li class="catalog-product-item"><a class="catalog-item-image" href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт для учебы"></a></li>
-				<li class="catalog-product-item"><a class="catalog-item-image" href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт для КВАСТ"></a></li>
-			</ul>
-			<ul class="pagination-list">
-				<li class="pagination-active"><a>1</a></li>
-				<li class="pagination-button"><a href="#">2</a></li>
-				<li class="pagination-button"><a href="#">3</a></li>
-				<li class="pagination-button"><a href="#">Следующая</a></li>
-			</ul>		
-		</section>
-		</div>		
-	</div>	
 	</main>
 	<footer class="main-footer container">
 		<ul class="footer-social">
