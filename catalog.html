@@ -17,7 +17,7 @@
 				<ul class="site-navigation">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
-					<li><a href="#" class="active">Магазин</a></li>
+					<li class="active"><a>Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
@@ -29,8 +29,8 @@
 			<h1 class="header-title">Магазин готовых шаблонов</h1>
 		</section>
 	</header>
-	<main class="container">
-		<div class="catalog-container">
+	<main class="main-container">
+		<div class="catalog-container container">
 		<div class="catalog-columns">
 		<section class="filters">		
 			<h2 class="visually-hidden">Фильтр товаров</h2>
@@ -63,16 +63,27 @@
 				<li class="catalog-product-item"><a class="catalog-item-image" href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт для КВАСТ"></a></li>
 			</ul>
 			<ul class="pagination-list">
-				<li class="pagination-active"><button class="button" type="submit">1</button></li>
-				<li><button class="button" type="submit">2</button></li>
-				<li><button class="button" type="submit">3</button></li>
-				<li><button class="button" type="submit">Следующая</button></li>
+				<li class="pagination-active"><a>1</a></li>
+				<li class="pagination-button"><a href="#">2</a></li>
+				<li class="pagination-button"><a href="#">3</a></li>
+				<li class="pagination-button"><a href="#">Следующая</a></li>
 			</ul>		
 		</section>
+		</div>		
+	</div>	
+	</main>
+	<footer class="main-footer container">
+		<ul class="footer-social">
+			<li><a class="social-button" href="#">Вконтакте</a></li>
+			<li><a class="social-button" href="#">Фейсбук</a></li>
+			<li><a class="social-button" href="#">Инстаграм</a></li>
+		</ul>	
+		<div class="footer-sale">
+			<b>Давайте дружить, это выгодно!</b>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</div>
-		
-	</div>
-	<section class="feedback">
+	</footer>
+	<section class="modal">
 			<div class="container">
 			<h2>Напишите нам</h2>
 			<form action="/echo" method="post">
@@ -86,19 +97,5 @@
 			</form>	
 			</div>			
 		</section>
-	</main>
-	<footer class="main-footer container">
-		<div class="footer-social">
-			<ul>
-				<li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
-			</ul>
-		</div>
-		<div class="footer-sale">
-			<b>Давайте дружить, это выгодно!</b>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
-		</div>
-	</footer>
 </body>
 </html>
