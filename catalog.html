@@ -21,7 +21,7 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
-					<li class="basket"><a href="#">Корзина</a></li>
+					<li><a class="basket" href="#">Корзина</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -34,21 +34,41 @@
 			<div class="catalog-columns">
 				<section class="filters">		
 					<h2 class="visually-hidden">Фильтр товаров</h2>
-					<form action="/echo" method="post">			
-						<h3 class="filters-title">Сетка:</h3>
-						<ul class="filters-list">
-							<li><label><input type="radio" name="network" checked>Адаптивная</label></li>
-							<li><label><input type="radio" name="network">Фиксированная</label></li>
-							<li><label><input type="radio" name="network">Резиновая</label></li>
-						</ul>
-						<h3 class="filters-title">Особенности:</h3>
-						<ul class="filters-list">
-							<li><label> <input type="checkbox" name="features" checked>Слайдер</label></li>
-							<li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
-							<li><label><input type="checkbox" name="features" checked>Новости</label></li>
-							<li><label><input type="checkbox" name="features">Галерея</label></li>
-							<li><label><input type="checkbox" name="features">Корзина</label></li>
-						</ul>
+					<form method="get" action="https://echo.htmlacademy.ru">
+						<fieldset class="filter-item">
+        					<legend>Стоимость:</legend>
+        					<div class="range-filter">
+            					<div class="range-controls">
+            						<div class="scale">
+              							<div class="bar"></div>
+            						</div>
+            						<div class="toggle toggle-min"></div>
+            						<div class="toggle toggle-max"></div>
+          						</div>
+          						<div class="price-controls">
+          							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            						<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          						</div>
+        					</div>
+      					</fieldset>
+      					<fieldset class="filter-item">
+							<legend>Сетка:</legend>
+							<ul class="filters-list">
+								<li><label><input type="radio" name="network" checked>Адаптивная</label></li>
+								<li><label><input type="radio" name="network">Фиксированная</label></li>
+								<li><label><input type="radio" name="network">Резиновая</label></li>
+							</ul>
+						</fieldset>
+						<fieldset class="filter-item">
+							<legend>Особенности:</legend>
+							<ul class="filters-list">
+								<li><label><input type="checkbox" name="features" checked>Слайдер</label></li>
+								<li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
+								<li><label><input type="checkbox" name="features" checked>Новости</label></li>
+								<li><label><input type="checkbox" name="features">Галерея</label></li>
+								<li><label><input type="checkbox" name="features">Корзина</label></li>
+							</ul>
+						</fieldset>
 						<button class="button filters-button" type="submit">Показать</button>
 					</form>	
 				</section>
