@@ -142,6 +142,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
   	display: inline-block;
   	outline: none;
+  	vertical-align: middle;
 }
 /*декоративный элемент для активного раздела*/
 .active a::after {
@@ -183,7 +184,6 @@ input[type="radio"].visually-hidden {
 /* == слайды == */ /*start*/
 .main-intro {
   	position: relative;
-
   	background-color: #eeeeee;
 }
 .intro-controls {
@@ -206,7 +206,7 @@ input[type="radio"].visually-hidden {
   	width: 18px;
   	height: 18px;
   	padding: 8px;
-  
+  	vertical-align: middle;
   	border-radius: 50%;
   	cursor: pointer;
 }
@@ -294,6 +294,7 @@ input[type="radio"].visually-hidden {
 .intro {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 .header-title {
 	font-size: 55px;
@@ -317,7 +318,7 @@ input[type="radio"].visually-hidden {
 	font-size: 24px;
 	line-height: 1.25;
 	text-transform: uppercase;
-	margin-top: 20px;
+	margin-top: 25px;
 }
 .catalog-list {
 	display: flex;
@@ -335,6 +336,19 @@ input[type="radio"].visually-hidden {
 .catalog-item .button {
 	width: 160px;
 	margin-top: 32px;
+}
+.catalog-item-image {
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	height: 146px;
+	background-color: #fb565a;
+}
+.catalog-item:nth-child(2) .catalog-item-image {
+	background-color: #00ca74;
+}
+.catalog-item:nth-child(3) .catalog-item-image {
+	background-color: #efc849;
 }
 .catalog-button-second {
 	background-color: #00ca74;
@@ -417,6 +431,7 @@ input[type="radio"].visually-hidden {
 /* == клиенты == */ /*start*/
 .customers-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
@@ -466,6 +481,7 @@ input[type="radio"].visually-hidden {
 	margin-top: 35px;
 }
 .contacts {
+	width: 220px;
 	position: absolute;
 	background-color: #ffffff;
 	top: 54px;
@@ -488,6 +504,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	margin: 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	width: 260px;
