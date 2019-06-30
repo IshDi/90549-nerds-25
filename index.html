@@ -125,7 +125,7 @@
 					<p>191186, Санкт-Петербург, <br>
 					ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-					<a href="#" class="button">Напишите нам</a>
+					<a href="#" class="button contacts-button">Напишите нам</a>
 				</div>
 				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель местоположения по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 			</div>
@@ -154,7 +154,7 @@
 		<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
 			<p class="modal-item">
 				<label for="name">Ваше имя:</label>
-				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+				<input class="modal-input-name" type="text" name="name" id="name" placeholder="Имя Фамилия">
 			</p>
 			<p class="modal-item">
 				<label for="email">Ваш e-mail:</label>
@@ -167,5 +167,32 @@
 			<button class="button" type="submit">Отправить</button>
 		</form>					
 	</section>
+	<script>
+		var contacts = document.querySelector(".contacts-button");
+		var modal = document.querySelector(".modal-letter");
+		var close = document.querySelector(".modal-close");
+		var nameLetter = document.querySelector(".modal-input-name");
+		var email = modal.querySelector("[name=email]");
+		var letter = modal.querySelector("[name=letter]");
+		var form = modal.querySelector("form");
+
+
+		contacts.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			modal.classList.add("modal-show");
+			nameLetter.focus();
+		});
+		close.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			modal.classList.remove("modal-show");
+		});
+		form.addEventListener("submit", function (evt) {
+			if (!nameLetter.value || !email.value || !letter.value) {
+				evt.preventDefault();
+				console.log("Нужно заполнить все поля");
+			}
+		});
+
+	</script>
 </body>
 </html>
