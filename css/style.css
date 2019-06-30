@@ -559,6 +559,9 @@ input[type="radio"].visually-hidden {
 	z-index: 100;
 	display: none;
 }
+.modal-show {
+	display: block;
+}
 .modal-letter {
 	top: 5px;
 	left: 50%;
