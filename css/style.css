@@ -487,6 +487,19 @@ input[type="radio"].visually-hidden {
 	top: 54px;
 	padding: 30px 50px 45px 50px;	
 }
+.contacts-tel {
+	color: #000000;
+}
+.contacts-tel:hover, 
+.contacts-tel:focus {
+	color: #fb565a;
+}
+.contacts-tel:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+
 .map-marker {
 	position: absolute;
 	top: 85px;
@@ -755,6 +768,7 @@ input[type="radio"].visually-hidden {
 
   	font-size: 16px;
   	text-transform: uppercase;
+  	vertical-align: center;
 }
 .price-controls input {
 	width: 60px;
